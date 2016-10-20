@@ -1,0 +1,17 @@
+  <div class="form-containter flex">
+    <form>
+      <p class="welcome">Welcome to <span class='DMTN'>DevMountain</span> Social
+      </br>
+      Add Some Info So Friends Can Find You</p>
+      <input type="text" name="Full Name" placeholder="Full Name" ng-model ='nameText'>
+      <input type="text" name="Tagline" placeholder="Tagline" ng-model='tagLineText'>
+      <input type="text" name="Profile" placeholder="Profile Image URL" ng-model='profileIMG'>
+      <textarea type="text" name="Bio" placeholder="Bio" ng-model='bioText'></textarea>
+      <button class="changes" ng-click='saveChanges(nameText, tagLineText, profileIMG, bioText)'>Save Changes</button>
+    </form>
+      <div class="triangles">
+      <div class="gray-triangle">
+        <div class="blue-triangle"></div>
+      </div>
+   </div>
+  </div>

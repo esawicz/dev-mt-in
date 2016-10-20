@@ -1,14 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="devFriends">
 
 <head>
 	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<title>DevMtin</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+
+	<title>DevMtn</title>
 </head>
 
 <body>
+  <header>
+    <div><img src="images/Icons/Search.svg">
+  	<div class='Devmountain'>DevMountain</div>
+    <div><img src="images/Icons/Ham.svg"></div>
+  </header>
 
-  
+
+  <ui-view></ui-view>
+
+  <footer>
+    <a ui-sref='findFriends'>Find Friends</a>
+    <a ui-sref='updateProfile'>Update Profile</a>
+    <a ui-sref='viewFriends'>View Friends</a>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+ 
+  <script src='js/app.js'></script>
+  <script src='js/services/mainSrv.js'></script>
+  <script src='js/controllers/mainCtrl.js'></script>
+  <script src='js/controllers/findFriends.js'></script>
+   <script src='js/controllers/landingCtrl.js'></script>
+ 
 </body>
 </html>
